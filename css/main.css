@@ -1,0 +1,282 @@
+/* ===== 1. RESET Y FONDO GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Fondo oscuro */
+    background-color: #1d1f21; 
+    color: white; 
+}
+
+/* 1. Contenedor principal (Fondo de la tarjeta principal) */
+.portal-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    /* Fondo principal: Gris Oscuro Sutil */
+    background-color: #23272a; 
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); 
+}
+
+/* --- 2. Estilos del Encabezado (Header) y Navegación --- */
+header {
+    /* Fondo de la barra de navegación */
+    background-color: #0d1b2a; 
+    color: white;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0; 
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    /* Nuevo Azul de acento (Azul Cyan) */
+    border: 3px solid  #ffffff; 
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #d6d6d6; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    /* Azul Cyan */
+    color:  #ffffff; 
+    background-color: rgba(0, 191, 255, 0.15);
+}
+
+/* --- 3. Estilos de Prácticas (Grid de Tarjetas) --- */
+
+.practicas {
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+
+.practicas h2 {
+    /* Título Azul Cyan */
+    color:  #ffffff; 
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 35px; 
+}
+
+.practicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; 
+}
+
+.practica {
+    /* CAMBIO CLAVE: Fondo Plomo Claro para contraste */
+    background-color: #c2c2c2; 
+    padding: 20px; 
+    border-radius: 10px; 
+    /* Borde Azul Cyan */
+    border: 2px solid  #0023e9; 
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto de levantamiento/hover con sombra azul */
+.practica:hover {
+    transform: translateY(-5px); 
+    /* Sombra basada en el Azul Cyan */
+    box-shadow: 0 8px 15px rgba(0, 191, 255, 0.4); 
+}
+
+.practica span {
+    font-size: 1em;
+    font-weight: bold;
+    display: block; 
+    margin-bottom: 2px;
+    color: rgb(0, 0, 0); 
+}
+
+.practica p {
+    color: #111111; /* Texto más claro para el nuevo fondo */
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-bottom: 15px; 
+    line-height: 1.2;
+}
+
+/* --- Estilos de las Barras de Progreso --- */
+
+.progress-bar {
+    width: 100%;
+    height: 8px; 
+    background-color: #5a5353; /* Fondo de la barra más oscuro */
+    border-radius: 5px;
+    margin: 10px 0;
+    display: block; 
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.practica small {
+    display: block; 
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #000000; /* Gris medio para el estado */
+    margin-top: 5px;
+}
+
+/* Colores de Progreso */
+.progress-1, .progress-4 { 
+    background-color: #5cb85c; /* Verde para completado/alto progreso */
+} 
+.progress-2, .progress-3, .progress-5, .progress-6 { 
+    /* Azul Zafiro Oscuro para progreso */
+    background-color:  #0023e9; 
+}
+
+/* Anchos de las barras */
+.progress-1 { width: 100%; }
+.progress-2 { width: 60%; }
+.progress-3 { width: 50%; }
+.progress-4 { width: 80%; } 
+.progress-5 { width: 40%; }
+.progress-6 { width: 30%; }
+
+
+/* --- 4. Estilos del Proyecto Final (Caja) --- */
+
+.proyecto-final {
+    /* Fondo Plomo Claro */
+    background-color: #c2c2c2; 
+    /* Borde Azul Cyan */
+    border: 2px solid  #0023e9; 
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.proyecto-final h2 {
+    /* Azul Cyan */
+    color:  #000000; 
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion-proyecto {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #000000; 
+}
+
+.estado-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.ver-proyecto {
+    /* Botón Azul Zafiro Oscuro */
+    padding: 10px 20px;
+    background-color:  #000000; 
+    border: none;
+    color: #fff;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.ver-proyecto:hover {
+    background-color:  #0023e9; /* Hover de Azul Zafiro */
+}
+
+.estado {
+    margin-left: 10px;
+    color: #000000; 
+}
+
+/* --- 5. Estilos del Pie de Página (Footer) --- */
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #000000; 
+    text-align: center; 
+}
+.footer-contenido {
+    font-size: 0.9em;
+    color: #ffffff; 
+}
+
+.footer-contenido p {
+    margin: 5px 0;
+}
+
+.footer-contenido span {
+    /* Estilo para el separador "|" */
+    color: #ffffff; 
+    margin: 0 8px;
+}
+
+.footer-contenido a {
+    /* Link de footer Azul Cyan */
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-contenido a:hover {
+    color: #ffffff; /* Azul Zafiro Oscuro al pasar el ratón */
+}
+
+.derechos {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #ffffff;
+}
