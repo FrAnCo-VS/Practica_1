@@ -7,7 +7,6 @@
 }
 
 body {
-    /* Fondo oscuro */
     background-color: #1d1f21; 
     color: white; 
 }
@@ -17,7 +16,6 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    /* Fondo principal: Gris Oscuro Sutil */
     background-color: #23272a; 
     border-radius: 12px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); 
@@ -25,7 +23,6 @@ body {
 
 /* --- 2. Estilos del Encabezado (Header) y Navegación --- */
 header {
-    /* Fondo de la barra de navegación */
     background-color: #0d1b2a; 
     color: white;
     padding: 20px;
@@ -46,7 +43,6 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
-    /* Nuevo Azul de acento (Azul Cyan) */
     border: 3px solid  #ffffff; 
 }
 
@@ -76,7 +72,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    /* Azul Cyan */
     color:  #ffffff; 
     background-color: rgba(0, 191, 255, 0.15);
 }
@@ -89,7 +84,6 @@ nav ul li a:hover {
 }
 
 .practicas h2 {
-    /* Título Azul Cyan */
     color:  #ffffff; 
     font-size: 1.5em;
     font-weight: bold;
@@ -103,21 +97,17 @@ nav ul li a:hover {
 }
 
 .practica {
-    /* CAMBIO CLAVE: Fondo Plomo Claro para contraste */
     background-color: #c2c2c2; 
     padding: 20px; 
     border-radius: 10px; 
-    /* Borde Azul Cyan */
     border: 2px solid  #0023e9; 
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Efecto de levantamiento/hover con sombra azul */
 .practica:hover {
     transform: translateY(-5px); 
-    /* Sombra basada en el Azul Cyan */
     box-shadow: 0 8px 15px rgba(0, 191, 255, 0.4); 
 }
 
@@ -130,7 +120,7 @@ nav ul li a:hover {
 }
 
 .practica p {
-    color: #111111; /* Texto más claro para el nuevo fondo */
+    color: #111111; 
     font-size: 0.9em;
     font-weight: normal;
     margin-bottom: 15px; 
@@ -142,7 +132,7 @@ nav ul li a:hover {
 .progress-bar {
     width: 100%;
     height: 8px; 
-    background-color: #5a5353; /* Fondo de la barra más oscuro */
+    background-color: #5a5353; 
     border-radius: 5px;
     margin: 10px 0;
     display: block; 
@@ -157,34 +147,39 @@ nav ul li a:hover {
     display: block; 
     font-size: 0.8em;
     font-weight: bold;
-    color: #000000; /* Gris medio para el estado */
+    color: #000000; 
     margin-top: 5px;
 }
 
-/* Colores de Progreso */
-.progress-1, .progress-4 { 
-    background-color: #5cb85c; /* Verde para completado/alto progreso */
+.progress-1 { 
+    background-color: #5cb85c;
 } 
-.progress-2, .progress-3, .progress-5, .progress-6 { 
-    /* Azul Zafiro Oscuro para progreso */
-    background-color:  #0023e9; 
-}
 
-/* Anchos de las barras */
+.progress-2 { 
+    background-color:  #5cb85c; 
+} 
+.progress-3 { 
+    background-color:  #5cb85c; 
+} 
+.progress-4 { 
+    background-color:  #0023e9; 
+} 
+.progress-5 { 
+    background-color:  #0023e9; 
+} 
+
 .progress-1 { width: 100%; }
-.progress-2 { width: 60%; }
-.progress-3 { width: 50%; }
-.progress-4 { width: 80%; } 
-.progress-5 { width: 40%; }
-.progress-6 { width: 30%; }
+.progress-2 { width: 100%; }
+.progress-3 { width: 100%; }
+.progress-4 { width: 0%; } 
+.progress-5 { width: 0%; }
+.progress-6 { width: 0%; }
 
 
 /* --- 4. Estilos del Proyecto Final (Caja) --- */
 
 .proyecto-final {
-    /* Fondo Plomo Claro */
     background-color: #c2c2c2; 
-    /* Borde Azul Cyan */
     border: 2px solid  #0023e9; 
     border-radius: 10px;
     padding: 25px;
@@ -194,7 +189,6 @@ nav ul li a:hover {
 }
 
 .proyecto-final h2 {
-    /* Azul Cyan */
     color:  #000000; 
     font-size: 1.8em;
     margin-bottom: 15px;
@@ -219,7 +213,6 @@ nav ul li a:hover {
 }
 
 .ver-proyecto {
-    /* Botón Azul Zafiro Oscuro */
     padding: 10px 20px;
     background-color:  #000000; 
     border: none;
@@ -232,7 +225,7 @@ nav ul li a:hover {
 }
 
 .ver-proyecto:hover {
-    background-color:  #0023e9; /* Hover de Azul Zafiro */
+    background-color:  #0023e9; 
 }
 
 .estado {
@@ -258,13 +251,11 @@ footer {
 }
 
 .footer-contenido span {
-    /* Estilo para el separador "|" */
     color: #ffffff; 
     margin: 0 8px;
 }
 
 .footer-contenido a {
-    /* Link de footer Azul Cyan */
     text-decoration: none;
     color: #ffffff; 
     font-weight: bold;
@@ -272,11 +263,21 @@ footer {
 }
 
 .footer-contenido a:hover {
-    color: #ffffff; /* Azul Zafiro Oscuro al pasar el ratón */
+    color: #ffffff; 
 }
 
 .derechos {
     font-size: 0.8em;
     margin-top: 10px;
     color: #ffffff;
+}
+
+.enlace-practica {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.enlace-practica:hover {
+    transform: scale(1.02);
 }
