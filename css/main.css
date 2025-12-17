@@ -162,7 +162,7 @@ nav ul li a:hover {
     background-color:  #5cb85c; 
 } 
 .progress-4 { 
-    background-color:  #0023e9; 
+    background-color:  #5cb85c; 
 } 
 .progress-5 { 
     background-color:  #0023e9; 
@@ -171,7 +171,7 @@ nav ul li a:hover {
 .progress-1 { width: 100%; }
 .progress-2 { width: 100%; }
 .progress-3 { width: 100%; }
-.progress-4 { width: 0%; } 
+.progress-4 { width: 100%; } 
 .progress-5 { width: 0%; }
 .progress-6 { width: 0%; }
 
